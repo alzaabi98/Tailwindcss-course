@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -11210,6 +11212,10 @@ video {
 
 .font-body{
   font-family: Overpass, sans-serif;
+}
+
+.font-hero{
+  font-family: Langar, sans-serif;
 }
 
 .font-thin{
@@ -41846,6 +41852,10 @@ video {
     font-family: Overpass, sans-serif;
   }
 
+  .sm\:font-hero{
+    font-family: Langar, sans-serif;
+  }
+
   .sm\:font-thin{
     font-weight: 100;
   }
@@ -72380,6 +72390,10 @@ video {
 
   .md\:font-body{
     font-family: Overpass, sans-serif;
+  }
+
+  .md\:font-hero{
+    font-family: Langar, sans-serif;
   }
 
   .md\:font-thin{
@@ -102918,6 +102932,10 @@ video {
     font-family: Overpass, sans-serif;
   }
 
+  .lg\:font-hero{
+    font-family: Langar, sans-serif;
+  }
+
   .lg\:font-thin{
     font-weight: 100;
   }
@@ -133454,6 +133472,10 @@ video {
     font-family: Overpass, sans-serif;
   }
 
+  .xl\:font-hero{
+    font-family: Langar, sans-serif;
+  }
+
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -163988,6 +164010,10 @@ video {
 
   .\32xl\:font-body{
     font-family: Overpass, sans-serif;
+  }
+
+  .\32xl\:font-hero{
+    font-family: Langar, sans-serif;
   }
 
   .\32xl\:font-thin{

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      body : ['Overpass', 'sans-serif'] 
+      body : ['Overpass', 'sans-serif'] ,
+      hero : ['Langar', 'sans-serif'] 
     }
   },
   variants: {
