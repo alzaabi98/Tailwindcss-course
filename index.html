@@ -9,26 +9,28 @@
     <title>Tailwindcss Course</title>
   </head>
   <body class="font-body bg-gray-100">
-    <div class="bg-gray-50 h-16">
-      <nav class="flex items-center justify-between px-64 mx-auto py-2">
-        <h1><img class="h-12" src="public/images/logo.png" alt="" /></h1>
-
-        <div>
-          <ul>
-            <li>
-              <a href="" class="mr-12 text-xl hover:text-pink-500"> Home</a>
-              <a href="" class="mr-12 text-xl hover:text-pink-500"> Service</a>
-              <a href="" class="mr-12 text-xl hover:text-pink-500"> Clients</a>
-              <a href="" class="mr-12 text-xl hover:text-pink-500"> News</a>
-              <a href="" class="mr-12 text-xl hover:text-pink-500"> Contacts</a>
-            </li>
-          </ul>
+    <div class="bg-white ">
+      <nav class=" px-10 mx-auto py-2 md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between">
+            <h1><img class="h-12" src="public/images/logo.png" alt="" /></h1>
+          <button class="h-6 w-6 md:hidden" id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden  flex-col items-center md:flex md:flex-row md:space-x-6 " id="links"> 
+        
+              <a href="" class=" text-xl hover:text-pink-500"> Home</a>
+              <a href="" class=" text-xl hover:text-pink-500"> Service</a>
+              <a href="" class=" text-xl hover:text-pink-500"> Clients</a>
+              <a href="" class=" text-xl hover:text-pink-500"> News</a>
+              <a href="" class=" text-xl hover:text-pink-500"> Contacts</a>
+              <button class="btn">Signup</button>
+        
         </div>
 
-        <div>
-          <button class="btn">Signup</button>
-          <button class="btn">Login</button>
-        </div>
+     
       </nav>
     </div>
 
@@ -377,6 +379,16 @@
             <p class="mt-32 text-center font-mono font-thin text-xs">© 2020 Codefest™. All Rights Reserved.</p>
         </div>
     </div>
+    <script>
+         menu = document.getElementById('menu')
+        links = document.getElementById('links')
 
+        menu.addEventListener('click',  function(e) {
+          e.preventDefault()
+
+          links.classList.toggle('flex')
+          links.classList.toggle('hidden')
+      })
+    </script>
   </body>
 </html>
